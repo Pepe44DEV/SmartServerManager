@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		504573FC26D177C2001B75C3 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504573FB26D177C2001B75C3 /* Tests_iOS.swift */; };
+		5045740726D177C2001B75C3 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5045740626D177C2001B75C3 /* Tests_macOS.swift */; };
+		5045740926D177C2001B75C3 /* SmartServerManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504573E026D177C0001B75C3 /* SmartServerManagerApp.swift */; };
+		5045740A26D177C2001B75C3 /* SmartServerManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504573E026D177C0001B75C3 /* SmartServerManagerApp.swift */; };
+		5045740B26D177C2001B75C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504573E126D177C0001B75C3 /* ContentView.swift */; };
+		5045740C26D177C2001B75C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504573E126D177C0001B75C3 /* ContentView.swift */; };
+		5045740D26D177C2001B75C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504573E226D177C2001B75C3 /* Assets.xcassets */; };
+		5045740E26D177C2001B75C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504573E226D177C2001B75C3 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		504573F826D177C2001B75C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 504573DB26D177C0001B75C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 504573E626D177C2001B75C3;
+			remoteInfo = "SmartServerManager (iOS)";
+		};
+		5045740326D177C2001B75C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 504573DB26D177C0001B75C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 504573EE26D177C2001B75C3;
+			remoteInfo = "SmartServerManager (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		504573E026D177C0001B75C3 /* SmartServerManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartServerManagerApp.swift; sourceTree = "<group>"; };
+		504573E126D177C0001B75C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		504573E226D177C2001B75C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		504573E726D177C2001B75C3 /* SmartServerManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartServerManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		504573EA26D177C2001B75C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		504573EF26D177C2001B75C3 /* SmartServerManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartServerManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		504573F126D177C2001B75C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		504573F226D177C2001B75C3 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		504573F726D177C2001B75C3 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		504573FB26D177C2001B75C3 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		504573FD26D177C2001B75C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5045740226D177C2001B75C3 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5045740626D177C2001B75C3 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		5045740826D177C2001B75C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		504573E426D177C2001B75C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504573EC26D177C2001B75C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504573F426D177C2001B75C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504573FF26D177C2001B75C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		504573DA26D177C0001B75C3 = {
+			isa = PBXGroup;
+			children = (
+				504573DF26D177C0001B75C3 /* Shared */,
+				504573E926D177C2001B75C3 /* iOS */,
+				504573F026D177C2001B75C3 /* macOS */,
+				504573FA26D177C2001B75C3 /* Tests iOS */,
+				5045740526D177C2001B75C3 /* Tests macOS */,
+				504573E826D177C2001B75C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		504573DF26D177C0001B75C3 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				504573E026D177C0001B75C3 /* SmartServerManagerApp.swift */,
+				504573E126D177C0001B75C3 /* ContentView.swift */,
+				504573E226D177C2001B75C3 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		504573E826D177C2001B75C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				504573E726D177C2001B75C3 /* SmartServerManager.app */,
+				504573EF26D177C2001B75C3 /* SmartServerManager.app */,
+				504573F726D177C2001B75C3 /* Tests iOS.xctest */,
+				5045740226D177C2001B75C3 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		504573E926D177C2001B75C3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				504573EA26D177C2001B75C3 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		504573F026D177C2001B75C3 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				504573F126D177C2001B75C3 /* Info.plist */,
+				504573F226D177C2001B75C3 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		504573FA26D177C2001B75C3 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				504573FB26D177C2001B75C3 /* Tests_iOS.swift */,
+				504573FD26D177C2001B75C3 /* Info.plist */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		5045740526D177C2001B75C3 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				5045740626D177C2001B75C3 /* Tests_macOS.swift */,
+				5045740826D177C2001B75C3 /* Info.plist */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		504573E626D177C2001B75C3 /* SmartServerManager (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5045741126D177C2001B75C3 /* Build configuration list for PBXNativeTarget "SmartServerManager (iOS)" */;
+			buildPhases = (
+				504573E326D177C2001B75C3 /* Sources */,
+				504573E426D177C2001B75C3 /* Frameworks */,
+				504573E526D177C2001B75C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SmartServerManager (iOS)";
+			productName = "SmartServerManager (iOS)";
+			productReference = 504573E726D177C2001B75C3 /* SmartServerManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		504573EE26D177C2001B75C3 /* SmartServerManager (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5045741426D177C2001B75C3 /* Build configuration list for PBXNativeTarget "SmartServerManager (macOS)" */;
+			buildPhases = (
+				504573EB26D177C2001B75C3 /* Sources */,
+				504573EC26D177C2001B75C3 /* Frameworks */,
+				504573ED26D177C2001B75C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SmartServerManager (macOS)";
+			productName = "SmartServerManager (macOS)";
+			productReference = 504573EF26D177C2001B75C3 /* SmartServerManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		504573F626D177C2001B75C3 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5045741726D177C2001B75C3 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				504573F326D177C2001B75C3 /* Sources */,
+				504573F426D177C2001B75C3 /* Frameworks */,
+				504573F526D177C2001B75C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				504573F926D177C2001B75C3 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 504573F726D177C2001B75C3 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5045740126D177C2001B75C3 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5045741A26D177C2001B75C3 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				504573FE26D177C2001B75C3 /* Sources */,
+				504573FF26D177C2001B75C3 /* Frameworks */,
+				5045740026D177C2001B75C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5045740426D177C2001B75C3 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 5045740226D177C2001B75C3 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		504573DB26D177C0001B75C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					504573E626D177C2001B75C3 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					504573EE26D177C2001B75C3 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					504573F626D177C2001B75C3 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 504573E626D177C2001B75C3;
+					};
+					5045740126D177C2001B75C3 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 504573EE26D177C2001B75C3;
+					};
+				};
+			};
+			buildConfigurationList = 504573DE26D177C0001B75C3 /* Build configuration list for PBXProject "SmartServerManager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 504573DA26D177C0001B75C3;
+			productRefGroup = 504573E826D177C2001B75C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				504573E626D177C2001B75C3 /* SmartServerManager (iOS) */,
+				504573EE26D177C2001B75C3 /* SmartServerManager (macOS) */,
+				504573F626D177C2001B75C3 /* Tests iOS */,
+				5045740126D177C2001B75C3 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		504573E526D177C2001B75C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5045740D26D177C2001B75C3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504573ED26D177C2001B75C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5045740E26D177C2001B75C3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504573F526D177C2001B75C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5045740026D177C2001B75C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		504573E326D177C2001B75C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5045740B26D177C2001B75C3 /* ContentView.swift in Sources */,
+				5045740926D177C2001B75C3 /* SmartServerManagerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504573EB26D177C2001B75C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5045740C26D177C2001B75C3 /* ContentView.swift in Sources */,
+				5045740A26D177C2001B75C3 /* SmartServerManagerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504573F326D177C2001B75C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504573FC26D177C2001B75C3 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504573FE26D177C2001B75C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5045740726D177C2001B75C3 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		504573F926D177C2001B75C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 504573E626D177C2001B75C3 /* SmartServerManager (iOS) */;
+			targetProxy = 504573F826D177C2001B75C3 /* PBXContainerItemProxy */;
+		};
+		5045740426D177C2001B75C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 504573EE26D177C2001B75C3 /* SmartServerManager (macOS) */;
+			targetProxy = 5045740326D177C2001B75C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5045740F26D177C2001B75C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5045741026D177C2001B75C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		5045741226D177C2001B75C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y44PV4HUH6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.pepe44.SmartServerManager;
+				PRODUCT_NAME = SmartServerManager;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5045741326D177C2001B75C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y44PV4HUH6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.pepe44.SmartServerManager;
+				PRODUCT_NAME = SmartServerManager;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5045741526D177C2001B75C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Y44PV4HUH6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.pepe44.SmartServerManager;
+				PRODUCT_NAME = SmartServerManager;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5045741626D177C2001B75C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Y44PV4HUH6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.pepe44.SmartServerManager;
+				PRODUCT_NAME = SmartServerManager;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5045741826D177C2001B75C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y44PV4HUH6;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.pepe44.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SmartServerManager (iOS)";
+			};
+			name = Debug;
+		};
+		5045741926D177C2001B75C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y44PV4HUH6;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.pepe44.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SmartServerManager (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5045741B26D177C2001B75C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Y44PV4HUH6;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.pepe44.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "SmartServerManager (macOS)";
+			};
+			name = Debug;
+		};
+		5045741C26D177C2001B75C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Y44PV4HUH6;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.pepe44.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "SmartServerManager (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		504573DE26D177C0001B75C3 /* Build configuration list for PBXProject "SmartServerManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5045740F26D177C2001B75C3 /* Debug */,
+				5045741026D177C2001B75C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5045741126D177C2001B75C3 /* Build configuration list for PBXNativeTarget "SmartServerManager (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5045741226D177C2001B75C3 /* Debug */,
+				5045741326D177C2001B75C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5045741426D177C2001B75C3 /* Build configuration list for PBXNativeTarget "SmartServerManager (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5045741526D177C2001B75C3 /* Debug */,
+				5045741626D177C2001B75C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5045741726D177C2001B75C3 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5045741826D177C2001B75C3 /* Debug */,
+				5045741926D177C2001B75C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5045741A26D177C2001B75C3 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5045741B26D177C2001B75C3 /* Debug */,
+				5045741C26D177C2001B75C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 504573DB26D177C0001B75C3 /* Project object */;
+}
