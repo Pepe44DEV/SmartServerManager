@@ -11,6 +11,42 @@ public var server:String = "No Server Selected"
 public var status:String = "STATUS"
 
 
+
+
+
+struct ViewDidLoadModifier: ViewModifier {
+
+    @State private var didLoad = false
+    private let action: (() -> Void)?
+
+    init(perform action: (() -> Void)? = nil) {
+        self.action = action
+    }
+
+    func body(content: Content) -> some View {
+        content.onAppear {
+            if didLoad == false {
+                didLoad = true
+                action?()
+            }
+        }
+    }
+
+}
+
+
+
+
+
+extension View {
+
+    func onLoad(perform action: (() -> Void)? = nil) -> some View {
+        modifier(ViewDidLoadModifier(perform: action))
+    }
+
+}
+
+
 struct SingleServer: View {
     var body: some View {
         NavigationView {
@@ -27,6 +63,8 @@ struct SingleServer: View {
                     .foregroundColor(.red)
                     
                     
+            }.onLoad{
+                OnlineCheck()
             }
         }
     }
@@ -54,7 +92,7 @@ struct ContentView: View {
         TabView{
             ServersView()
                 .tabItem {
-                    Image(systemName: "gear")
+                    Image(systemName: "server.rack")
                     Text("Servers")
                 }
         }
@@ -67,3 +105,34 @@ struct ContentView_Previews: PreviewProvider {
             .preferredColorScheme(.dark)
     }
 }
+
+
+
+//Functions
+public func OnlineCheck() {
+    let hostUrl: String = "http://app.dream-city.net:30120"
+    if let url = URL(string: hostUrl) {
+       var request = URLRequest(url: url)
+       request.httpMethod = "HEAD"
+       URLSession(configuration: .default)
+       .dataTask(with: request) { (_, response, error) -> Void in
+          guard error == nil else {
+             print("Error Main:", error ?? "")
+             return
+          }
+          guard (response as? HTTPURLResponse)?
+          .statusCode == 200 else {
+             DispatchQueue.main.async {
+             server = "Offline"
+             }
+             return
+             
+          }
+          DispatchQueue.main.async {
+          server = "Online"
+         //self.StateL.textColor = UIColor.green
+     }
+       }
+       .resume()
+    }
+ }
